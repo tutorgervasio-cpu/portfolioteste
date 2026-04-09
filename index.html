@@ -1,65 +1,135 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Meu Portfólio
+        </title>
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <header>
+        <!--Cabeçalo-->
+        <h1>Meu Portfólio</h1>
+        <b>Raimunda</b>
+        <i>Alerta á Comunidade</i>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#projetos">Projetos</a></li> 
+         </ul>
+        </nav>
+        </header>
+        <!--Seção Sobre-->
+        <section id="sobre">
+            <h2> Sobre mim</h2>
+            <div style="display: inline-block: center: gap: 15px;">
+            <img src="1.jpg" alt="Descrição"style="max-width: 150px; right: 15px;">
+                                      
+          <p>Meu nome é Raimunda Almeida, sou estudante do curso de Sistemas para Internet e estou em fase de conclusão da graduação. Durante minha formação, venho desenvolvendo conhecimentos nas áreas de desenvolvimento web, utilizando tecnologias como HTML, CSS e JavaScript.
+Atualmente, participo do desenvolvimento do aplicativo “Alerta à Comunidade”, um projeto voltado para melhorar a comunicação e a segurança entre os membros da comunidade, por meio do compartilhamento de informações e alertas importantes.
+Sou dedicada, responsável e tenho grande interesse em crescer profissionalmente na área de tecnologia, contribuindo com soluções inovadoras que gerem impacto positivo na sociedade
+        </p>
+        </div>
+        </section>
+        <!--Seção Projetos-->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <p>“Alerta à Comunidade”, um projeto voltado para melhorar a comunicação e a segurança entre os membros da comunidade, por meio do compartilhamento de informações e alertas importantes.
+            </p>
+            <div id="lista-projetos">
+                <!--Projetos serão inseridos via JavaScript-->
+            </div>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Portfólio</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-<nav class="menu">
-
-<h1>Meu Portfólio</h1>
-
-<ul>
-<li><a href="#sobre">Sobre mim</a></li>
-<li><a href="#projetos">Meus Projetos</a></li>
-</ul>
-
-</nav>
-</header>
-
-
-<main>
-
-<section id="sobre">
-
-<h2>Sobre mim</h2>
-
-<p>
-Sou desenvolvedor web com foco em criação de sistemas administrativos
-e automação de processos utilizando HTML, CSS, JavaScript e integração
-com APIs. Tenho experiência no desenvolvimento de dashboards,
-formulários inteligentes e sistemas de gestão de dados.
-</p>
-
-</section>
-
-
-<section id="projetos">
-
-<h2>Meus Projetos</h2>
-
-<div id="lista-projetos" class="projetos-container">
-
-</div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-<p>© 2026 - Seu Nome</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+        </section>
+        <!--Rodapé-->
+        <footer>
+            <p> ₢ 2026- Raimunda Almeida Dias</p>
+        </footer>
+        <script src="script.js"></script>
+        </body>  
+        <style>
+            /*Reset básico*/
+        * {
+            <margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          /* Corpo*/
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+          }
+          /*Cabeçalo*/
+                                              
+        header {
+           
+           background: #66b188;
+            color: #0a0c0a;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          } 
+          nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+          } 
+          nav a {
+            color: rgb(31, 19, 19);
+            text-decoration: none;
+          } 
+           img-1{
+            background-image: url('assets/1.jpg');
+            width: 300px;
+            height: 100px;
+            background-size: cover;
+            background-position: left;
+                        
+          /* Seção */ 
+          section {
+            padding: 20px;
+          }
+          /* Projetos*/
+          #lista-projetos{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+          }  
+          .card {
+            border: 1px solid #279c44;
+            padding: 15px;
+            width: 250px;
+            border-radius: 8px;
+           
+            }
+             /* Rodapé */
+             
+             <footer>
+              {
+              border-top: 2px solid #333
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 20px;
+              /* Borda superior personalizada*/
+              border-top: 4pxsolid #007bff;
+             }
+             
+                    /* Responsividade (Mobile First)*/
+                     @media (max-width: 600px) 
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #lista-projetos {
+                flex-direction: column;
+            }
+            
+          }
+          
+        </style>
+        
+         </html>
+         
+ 
